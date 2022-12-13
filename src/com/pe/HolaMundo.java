@@ -2,6 +2,8 @@ package com.pe;
 
 public class HolaMundo {
     public static void main(String[] args) {
-        System.out.println("Hello world");
+        Mensaje mensaje = new Mensaje();
+        String nombre = mensaje.solicitarDatos("Escribe tu nombre: ");
+        mensaje.saludar(nombre);
     }
 }
